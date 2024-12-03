@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- fontawesome cdn link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Ecom</title>
+
+    <style>
+      /* font urbalist */
+      @import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+      /* font inter */
+      @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+      inter-font {
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+      }
+
+      urbanist-font {
+        font-family: "Urbanist", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-style: normal;
+      }
+    </style>
+  </head>
+  <body class="urbanist-font px-3 bg-[#F3F3F3]">
+    <!-- header -->
+    <header
+      class="container mx-auto mt-3 md:mt-[30px] lg:mt-[50px] space-y-16 pb-[50px]"
+    >
+      <!-- navbar -->
+      <nav class="flex justify-between items-center w-full inter-font">
+        <div class="logo flex items-center">
+          <h1 class="text-3xl"><span class="text-[#FC6320]">e</span>Com</h1>
+          <img src="./images/logo_icon.png" alt="" />
+        </div>
+
+        <div class="hamberger-icon md:hidden">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 16 16"
+            fill="currentColor"
+            class="size-4"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M2 3.75A.75.75 0 0 1 2.75 3h10.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 3.75ZM2 8a.75.75 0 0 1 .75-.75h10.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 8Zm0 4.25a.75.75 0 0 1 .75-.75h10.5a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1-.75-.75Z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </div>
+
+        <div class="hidden md:block menuItems">
+          <ul class="flex gap-6 text-[#0F0E0E99] items-center">
+            <li
+              class="bg-[#FC63201A] p-2 border rounded-lg border-[#FC632026] text-[#FC6320]"
+            >
+              Home
+            </li>
+            <li>Shop</li>
+            <li>App Projects</li>
+            <li>App Products</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+
+        <div class="hidden md:block social-media">
+          <ul class="flex gap-4">
+            <li>
+              <a href="#"><img src="./images/fb.png" alt="" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="./images/insta.png" alt="" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="./images/twit.png" alt="" /></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- navbar end -->
+
+      <!-- Banner start -->
+      <section
+        class="h-[550px] rounded-3xl relative flex items-center justify-center xl:h-[650px] bg-red-300 bg-[url('./images/banner_bg.png')] bg-no-repeat bg-cover w-full"
+      >
+        <div
+          class="absolute rounded-3xl inset-0 bg-gradient-to-t from-black opacity-75"
+        ></div>
+        <div class="text-center space-y-5 z-50">
+          <div class="title-desc urbanist-font space-y-5">
+            <h1 class="text-white font-bold text-5xl">
+              Don't Miss Out on These Unbeatable <br />
+              Black Friday Deals!
+            </h1>
+            <p class="font-noraml text-slate-50">
+              Save big this Black Friday with unbeatable deals on tech, home
+              essentials, <br />
+              fashion, and more! Limited stock.
+            </p>
+          </div>
+          <div class="explore-btns text-white">
+            <button class="bg-[#FC6320] py-3 px-5 rounded-md">
+              Explore Deal
+            </button>
+            <button class="rounded-md py-3 px-8 border border-white">
+              Buy Now
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- Banner end -->
+
+      <!-- Brands icon-->
+      <section class="brand flex justify-between flex-wrap">
+        <div>
+          <img class="filter grayscale" src="./images/brand/1.png" alt="" />
+        </div>
+        <div>
+          <img class="filter grayscale" src="./images/brand/2.png" alt="" />
+        </div>
+        <div>
+          <img class="filter grayscale" src="./images/brand/3.png" alt="" />
+        </div>
+        <div>
+          <img class="filter grayscale" src="./images/brand/4.png" alt="" />
+        </div>
+        <div>
+          <img class="filter grayscale" src="./images/brand/5.png" alt="" />
+        </div>
+        <div>
+          <img class="filter grayscale" src="./images/brand/6.png" alt="" />
+        </div>
+      </section>
+      <!-- Brands icon end -->
+    </header>
+    <!-- header end -->
+
+    <!-- main -->
+    <main
+      class="container mx-auto mt-3 md:mt-[30px] lg:mt-[50px] space-y-16 pb-[50px]"
+    >
+      <!-- all products -->
+      <section class="products-section space-y-5">
+        <div
+          class="text-center flex flex-col justify-center items-center space-y-4"
+        >
+          <h1 class="text-5xl">Exclusive Products</h1>
+          <p class="text-[#0F0E0EB2] lg:w-[30%]">
+            Save big this Black Friday with unbeatable deals on tech, home
+            essentials, fashion, and more! Limited stock.
+          </p>
+        </div>
+
+        <div
+          class="products grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5"
+        >
+          <div class="product-container rounded-lg bg-white">
+            <div class="product p-5 space-y-3">
+              <div class="h-[200px] bg-[#F3F3F3] rounded-lg"></div>
+              <div class="title-desc-btn">
+                <h1 class="text-xl">Exclusive Products</h1>
+                <p class="text-[#0F0E0EB2]">
+                  Save big this Black Friday with unbeatable deals on tech, home
+                  essentials, fashion, and more! Limited stock.
+                </p>
+                <div class="quantity-price flex justify-between items-center">
+                  <h1>Price: 1520 Taka</h1>
+                  <div
+                    class="bg-[#0F0E0E0D] px-8 py-2 rounded-lg text-lg space-x-5"
+                  >
+                    <span>-</span>
+                    <span>2</span>
+                    <span>+</span>
+                  </div>
+                </div>
+              </div>
+              <div class="flex flex-col gap-4">
+                <button
+                  class="w-full bg-gray-100 rounded-lg py-4 border font-semibold"
+                >
+                  Add to cart
+                </button>
+                <button
+                  class="w-full bg-[#FC63201A] rounded-lg py-4 border text-[#FC6320]"
+                >
+                  Buy Now
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-container rounded-lg bg-white">
+            <div class="product p-5 space-y-3">
+              <div class="h-[200px] bg-[#F3F3F3] rounded-lg"></div>
+              <div class="title-desc-btn">
+                <h1 class="text-xl">Exclusive Products</h1>
+                <p class="text-[#0F0E0EB2]">
+                  Save big this Black Friday with unbeatable deals on tech, home
+                  essentials, fashion, and more! Limited stock.
+                </p>
+                <div class="quantity-price flex justify-between items-center">
+                  <h1>Price: 1520 Taka</h1>
+                  <div
+                    class="bg-[#0F0E0E0D] px-8 py-2 rounded-lg text-lg space-x-5"
+                  >
+                    <span>-</span>
+                    <span>2</span>
+                    <span>+</span>
+                  </div>
+                </div>
+              </div>
+              <div class="flex flex-col gap-4">
+                <button
+                  class="w-full bg-gray-100 rounded-lg py-4 border font-semibold"
+                >
+                  Add to cart
+                </button>
+                <button
+                  class="w-full bg-[#FC63201A] rounded-lg py-4 border text-[#FC6320]"
+                >
+                  Buy Now
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-container rounded-lg bg-white">
+            <div class="product p-5 space-y-3">
+              <div class="h-[200px] bg-[#F3F3F3] rounded-lg"></div>
+              <div class="title-desc-btn">
+                <h1 class="text-xl">Exclusive Products</h1>
+                <p class="text-[#0F0E0EB2]">
+                  Save big this Black Friday with unbeatable deals on tech, home
+                  essentials, fashion, and more! Limited stock.
+                </p>
+                <div class="quantity-price flex justify-between items-center">
+                  <h1>Price: 1520 Taka</h1>
+                  <div
+                    class="bg-[#0F0E0E0D] px-8 py-2 rounded-lg text-lg space-x-5"
+                  >
+                    <span>-</span>
+                    <span>2</span>
+                    <span>+</span>
+                  </div>
+                </div>
+              </div>
+              <div class="flex flex-col gap-4">
+                <button
+                  class="w-full bg-gray-100 rounded-lg py-4 border font-semibold"
+                >
+                  Add to cart
+                </button>
+                <button
+                  class="w-full bg-[#FC63201A] rounded-lg py-4 border text-[#FC6320]"
+                >
+                  Buy Now
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-container rounded-lg bg-white">
+            <div class="product p-5 space-y-3">
+              <div class="h-[200px] bg-[#F3F3F3] rounded-lg"></div>
+              <div class="title-desc-btn">
+                <h1 class="text-xl">Exclusive Products</h1>
+                <p class="text-[#0F0E0EB2]">
+                  Save big this Black Friday with unbeatable deals on tech, home
+                  essentials, fashion, and more! Limited stock.
+                </p>
+                <div class="quantity-price flex justify-between items-center">
+                  <h1>Price: 1520 Taka</h1>
+                  <div
+                    class="bg-[#0F0E0E0D] px-8 py-2 rounded-lg text-lg space-x-5"
+                  >
+                    <span>-</span>
+                    <span>2</span>
+                    <span>+</span>
+                  </div>
+                </div>
+              </div>
+              <div class="flex flex-col gap-4">
+                <button
+                  class="w-full bg-gray-100 rounded-lg py-4 border font-semibold"
+                >
+                  Add to cart
+                </button>
+                <button
+                  class="w-full bg-[#FC63201A] rounded-lg py-4 border text-[#FC6320]"
+                >
+                  Buy Now
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-container rounded-lg bg-white">
+            <div class="product p-5 space-y-3">
+              <div class="h-[200px] bg-[#F3F3F3] rounded-lg"></div>
+              <div class="title-desc-btn">
+                <h1 class="text-xl">Exclusive Products</h1>
+                <p class="text-[#0F0E0EB2]">
+                  Save big this Black Friday with unbeatable deals on tech, home
+                  essentials, fashion, and more! Limited stock.
+                </p>
+                <div class="quantity-price flex justify-between items-center">
+                  <h1>Price: 1520 Taka</h1>
+                  <div
+                    class="bg-[#0F0E0E0D] px-8 py-2 rounded-lg text-lg space-x-5"
+                  >
+                    <span>-</span>
+                    <span>2</span>
+                    <span>+</span>
+                  </div>
+                </div>
+              </div>
+              <div class="flex flex-col gap-4">
+                <button
+                  class="w-full bg-gray-100 rounded-lg py-4 border font-semibold"
+                >
+                  Add to cart
+                </button>
+                <button
+                  class="w-full bg-[#FC63201A] rounded-lg py-4 border text-[#FC6320]"
+                >
+                  Buy Now
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-container rounded-lg bg-white">
+            <div class="product p-5 space-y-3">
+              <div class="h-[200px] bg-[#F3F3F3] rounded-lg"></div>
+              <div class="title-desc-btn">
+                <h1 class="text-xl">Exclusive Products</h1>
+                <p class="text-[#0F0E0EB2]">
+                  Save big this Black Friday with unbeatable deals on tech, home
+                  essentials, fashion, and more! Limited stock.
+                </p>
+                <div class="quantity-price flex justify-between items-center">
+                  <h1>Price: 1520 Taka</h1>
+                  <div
+                    class="bg-[#0F0E0E0D] px-8 py-2 rounded-lg text-lg space-x-5"
+                  >
+                    <span>-</span>
+                    <span>2</span>
+                    <span>+</span>
+                  </div>
+                </div>
+              </div>
+              <div class="flex flex-col gap-4">
+                <button
+                  class="w-full bg-gray-100 rounded-lg py-4 border font-semibold"
+                >
+                  Add to cart
+                </button>
+                <button
+                  class="w-full bg-[#FC63201A] rounded-lg py-4 border text-[#FC6320]"
+                >
+                  Buy Now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="all-products-btn flex justify-center">
+          <button class="bg-[#FC6320] px-8 rounded-lg py-4 border text-white">
+            View All Products
+          </button>
+        </div>
+      </section>
+      <!-- all products end -->
+
+      <!-- counter -->
+      <section class="counter flex flex-col lg:flex-row justify-around">
+        <div class="flex flex-col justify-center items-center gap-5">
+          <img src="./images/counter/fi_7078329.png" alt="" />
+          <h1 class="text-5xl font-bold">1500+</h1>
+          <p class="text-lg">Products</p>
+        </div>
+
+        <div class="flex flex-col justify-center items-center gap-5">
+          <img src="./images/counter/cross-selling 1.png" alt="" />
+          <h1 class="text-5xl font-bold">15500+</h1>
+          <p class="text-lg">Sells</p>
+        </div>
+
+        <div class="flex flex-col justify-center items-center gap-5">
+          <img src="./images/counter/group 1.png" alt="" />
+          <h1 class="text-5xl font-bold">5500++</h1>
+          <p class="text-lg">Happy Customers</p>
+        </div>
+
+        <div class="flex flex-col justify-center items-center gap-5">
+          <img src="./images/counter/link 1.png" alt="" />
+          <h1 class="text-5xl font-bold">500++</h1>
+          <p class="text-lg">Team Member</p>
+        </div>
+      </section>
+      <!-- counter end -->
+
+      <!-- registration -->
+      <section class="regis-section space-y-6">
+        <div
+          class="text-center flex flex-col justify-center items-center space-y-4"
+        >
+          <h1 class="text-5xl">Create account</h1>
+          <p class="text-[#0F0E0EB2] lg:w-[30%]">
+            Save big this Black Friday with unbeatable deals on tech, home
+            essentials, fashion, and more! Limited stock.
+          </p>
+        </div>
+
+        <div
+          class="form-section bg-white flex flex-col lg:flex-row p-8 rounded-lg"
+        >
+          <div
+            class="w-full lg:w-[50%] h-full flex justify-center items-center"
+          >
+            <img src="./images/res.png" alt="" />
+          </div>
+          <div class="w-full lg:w-[50%] h-full form-container">
+            <form class="space-y-4">
+              <div class="space-y-1">
+                <label class="block text-lg after:content-['*'] after:ml-1 after:text-red-500" for="name">Name</label>
+                <div class="flex gap-3">
+                  <input
+                    class="w-[50%] pl-3 py-3 rounded-lg placeholder:pl-3 border outline-none"
+                    id="name"
+                    type="text"
+                    required
+                    placeholder="Last Name"
+                  />
+
+                  <input
+                    class="w-[50%] pl-3 py-3 rounded-lg placeholder:pl-3 border outline-none"
+                    id="name"
+                    type="text"
+                    required
+                    placeholder="First Name"
+                  />
+                </div>
+              </div>
+
+              <div class="space-y-1">
+                <label class="block text-lg after:content-['*'] after:ml-1 after:text-red-500" for="email">Email</label>
+                <input
+                  class="w-full pl-3 py-3 rounded-lg placeholder:pl-3 border outline-none"
+                  id="email"
+                  type="email"
+                  required
+                  placeholder="Write your email"
+                />
+              </div>
+
+              <div class="space-y-1">
+                <label class="block text-lg after:content-['*'] after:ml-1 after:text-red-500" for="password">Password</label>
+                <input
+                  class="w-full pl-3 py-3 rounded-lg placeholder:pl-3 border outline-none"
+                  id="password"
+                  type="password"
+                  required
+                  placeholder="Write your password"
+                />
+              </div>
+
+              <div class="space-y-1">
+                <label class="block text-lg after:content-['*'] after:ml-1 after:text-red-500" for="age">Age</label>
+                <input
+                  class="w-full pl-3 py-3 rounded-lg placeholder:pl-3 border outline-none"
+                  id="age"
+                  type="number"
+                  required
+                  placeholder="Write your age"
+                />
+              </div>
+
+              <div class="space-y-1 flex gap-3">
+                <div class="w-[50%]">
+                  <label class="block text-lg after:content-['*'] after:ml-1 after:text-red-500" for="gender">Gender</label>
+                  <select
+                    class="w-full pl-3 py-3 rounded-lg placeholder:pl-3 border outline-none"
+                    name="gender"
+                    id="gender"
+                  >
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                  </select>
+                </div>
+                <div class="w-[50%]">
+                  <label class="block text-lg after:content-['*'] after:ml-1 after:text-red-500" for="country">Country</label>
+                  <select
+                    class="w-full pl-3 py-3 rounded-lg placeholder:pl-3 border outline-none"
+                    name="country"
+                    id="country"
+                  >
+                    <option value="bd">Bd</option>
+                    <option value="usa">usa</option>
+                  </select>
+                </div>
+              </div>
+              <div class="retistration-btn flex justify-center">
+                <button
+                  class="w-full bg-[#FC6320] px-8 rounded-lg py-3 border text-white"
+                >
+                  View All Products
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <!-- registration end -->
+    </main>
+
+    <!-- footer -->
+
+    <footer class="overflow-hidden space-y-8">
+      <section class="reviews-section space-y-8">
+        <div class="title-btn-container container mx-auto">
+          <div class="flex w-full justify-between">
+            <div class="space-y-5 w-full lg:w-1/2">
+              <h1 class="text-5xl">What our Customer Says</h1>
+              <p class="text-[#0F0E0EB2] lg:w-[30%]">
+                Save big this Black Friday with unbeatable deals on tech, home
+                essentials, fashion, and more! Limited stock.
+              </p>
+            </div>
+            <div
+              class="arrow-container gap-4 flex w-full lg:w-1/2 justify-end items-end"
+            >
+              <div
+                class="h-10 w-10 bg-white hover:bg-black rounded-full flex justify-center items-center hover:text-white"
+              >
+                <span
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18"
+                    />
+                  </svg>
+                </span>
+              </div>
+              <div
+                class="h-10 w-10 bg-white hover:bg-black rounded-full flex justify-center items-center hover:text-white"
+              >
+                <span
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+                    />
+                  </svg>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="reviews-container container mx-auto flex flex-col lg:flex-row gap-4">
+          <div class="review-container bg-white rounded-xl p-5">
+            <div class="content w-[400px] space-y-3">
+              <div class="img-title-date flex gap-5">
+                <div class="img">
+                  <div class="w-[52px] h-[52px] bg-gray-300 rounded-full"></div>
+                </div>
+                <div class="">
+                  <h1>Awlad Hossain</h1>
+                  <p>10/10/2024</p>
+                </div>
+              </div>
+              <p class="text-[#0F0E0EB2]">
+                Save big this Black Friday with unbeatable deals on tech. Save
+                big this Black Friday with unbeatable deals on tech. Save big
+                this Black Friday with unbeatable deals on tech.
+              </p>
+
+              <div class="rIcon-container flex gap-2">
+                <div>
+                  <img src="./images/star-rating.png" alt="" />
+                </div>
+                <div>
+                  <img src="./images/star-rating.png" alt="" />
+                </div>
+                <div>
+                  <img src="./images/star-rating.png" alt="" />
+                </div>
+                <div>
+                  <img src="./images/star-rating.png" alt="" />
+                </div>
+                <div>
+                  <img src="./images/star-rating.png" alt="" />
+                </div>
+                <div>
+                  <h1 class="text-lg font-semibold">(5.0)</h1>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          
+          <div class="review-container bg-white rounded-xl p-5">
+            <div class="content w-[400px] space-y-3">
+              <div class="img-title-date flex gap-5">
+                <div class="img">
+                  <div class="w-[52px] h-[52px] bg-gray-300 rounded-full"></div>
+                </div>
+                <div class="">
+                  <h1>Awlad Hossain</h1>
+                  <p>10/10/2024</p>
+                </div>
+              </div>
+              <p class="text-[#0F0E0EB2]">
+                Save big this Black Friday with unbeatable deals on tech. Save
+                big this Black Friday with unbeatable deals on tech. Save big
+                this Black Friday with unbeatable deals on tech.
+              </p>
+              <div class="rIcon-container flex gap-2">
+                <div>
+                  <img src="./images/star-rating.png" alt="" />
+                </div>
+                <div>
+                  <img src="./images/star-rating.png" alt="" />
+                </div>
+                <div>
+                  <img src="./images/star-rating.png" alt="" />
+                </div>
+                <div>
+                  <img src="./images/star-rating.png" alt="" />
+                </div>
+                <div>
+                  <img src="./images/star-rating.png" alt="" />
+                </div>
+                <div>
+                  <h1 class="text-lg font-semibold">(5.0)</h1>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="review-container bg-white rounded-xl p-5">
+            <div class="content w-[400px] space-y-3">
+              <div class="img-title-date flex gap-5">
+                <div class="img">
+                  <div class="w-[52px] h-[52px] bg-gray-300 rounded-full"></div>
+                </div>
+                <div class="">
+                  <h1>Rakib Hasan</h1>
+                  <p>11/11/2024</p>
+                </div>
+              </div>
+              <p class="text-[#0F0E0EB2]">
+                Save big this Black Friday with unbeatable deals on tech. Save
+                big this Black Friday with unbeatable deals on tech. Save big
+                this Black Friday with unbeatable deals on tech.
+              </p>
+              <div class="rIcon-container flex gap-2">
+                <div>
+                  <img src="./images/star-rating.png" alt="" />
+                </div>
+                <div>
+                  <img src="./images/star-rating.png" alt="" />
+                </div>
+                <div>
+                  <img src="./images/star-rating.png" alt="" />
+                </div>
+                <div>
+                  <img src="./images/star-rating.png" alt="" />
+                </div>
+                <div>
+                  <img src="./images/star-rating.png" alt="" />
+                </div>
+                <div>
+                  <h1 class="text-lg font-semibold">(5.0)</h1>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="review-container bg-white rounded-xl p-5">
+            <div class="content w-[400px] space-y-3">
+              <div class="img-title-date flex gap-5">
+                <div class="img">
+                  <div class="w-[52px] h-[52px] bg-gray-300 rounded-full"></div>
+                </div>
+                <div class="">
+                  <h1>Awlad Hossain</h1>
+                  <p>10/10/2024</p>
+                </div>
+              </div>
+              <p class="text-[#0F0E0EB2]">
+                Save big this Black Friday with unbeatable deals on tech. Save
+                big this Black Friday with unbeatable deals on tech. Save big
+                this Black Friday with unbeatable deals on tech.
+              </p>
+              <div class="rIcon-container flex gap-2">
+                <div>
+                  <img src="./images/star-rating.png" alt="" />
+                </div>
+                <div>
+                  <img src="./images/star-rating.png" alt="" />
+                </div>
+                <div>
+                  <img src="./images/star-rating.png" alt="" />
+                </div>
+                <div>
+                  <img src="./images/star-rating.png" alt="" />
+                </div>
+                <div>
+                  <img src="./images/star-rating.png" alt="" />
+                </div>
+                <div>
+                  <h1 class="text-lg font-semibold">(5.0)</h1>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="review-container bg-white rounded-xl p-5">
+            <div class="content w-[400px] space-y-3">
+              <div class="img-title-date flex gap-5">
+                <div class="img">
+                  <div class="w-[52px] h-[52px] bg-gray-300 rounded-full"></div>
+                </div>
+                <div class="">
+                  <h1>Awlad Hossain</h1>
+                  <p>10/10/2024</p>
+                </div>
+              </div>
+              <p class="text-[#0F0E0EB2]">
+                Save big this Black Friday with unbeatable deals on tech. Save
+                big this Black Friday with unbeatable deals on tech. Save big
+                this Black Friday with unbeatable deals on tech.
+              </p>
+              <div class="rIcon-container flex gap-2">
+                <div>
+                  <img src="./images/star-rating.png" alt="" />
+                </div>
+                <div>
+                  <img src="./images/star-rating.png" alt="" />
+                </div>
+                <div>
+                  <img src="./images/star-rating.png" alt="" />
+                </div>
+                <div>
+                  <img src="./images/star-rating.png" alt="" />
+                </div>
+                <div>
+                  <img src="./images/star-rating.png" alt="" />
+                </div>
+                <div>
+                  <h1 class="text-lg font-semibold">(5.0)</h1>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="review-container bg-white rounded-xl p-5">
+            <div class="content w-[400px] space-y-3">
+              <div class="img-title-date flex gap-5">
+                <div class="img">
+                  <div class="w-[52px] h-[52px] bg-gray-300 rounded-full"></div>
+                </div>
+                <div class="">
+                  <h1>Awlad Hossain</h1>
+                  <p>10/10/2024</p>
+                </div>
+              </div>
+              <p class="text-[#0F0E0EB2]">
+                Save big this Black Friday with unbeatable deals on tech. Save
+                big this Black Friday with unbeatable deals on tech. Save big
+                this Black Friday with unbeatable deals on tech.
+              </p>
+              <div class="rIcon-container flex gap-2">
+                <div>
+                  <img src="./images/star-rating.png" alt="" />
+                </div>
+                <div>
+                  <img src="./images/star-rating.png" alt="" />
+                </div>
+                <div>
+                  <img src="./images/star-rating.png" alt="" />
+                </div>
+                <div>
+                  <img src="./images/star-rating.png" alt="" />
+                </div>
+                <div>
+                  <img src="./images/star-rating.png" alt="" />
+                </div>
+                <div>
+                  <h1 class="text-lg font-semibold">(5.0)</h1>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="footer h-[554px] bg-white flex justify-center items-center">
+        <div class="flex flex-col justify-center items-center gap-4 space-y-3">
+          <div class="logo flex items-center">
+          <h1 class="text-3xl"><span class="text-[#FC6320]">e</span>Com</h1>
+          <img src="./images/logo_icon.png" alt="" />
+        </div>
+        <p class="text-center text-[#0F0E0EB2]">Save big this Black Friday with unbeatable deals on tech, <br> home essentials, fashion, and more! Limited stock.</p>
+        <div class="w-[1122px] h-0.5 bg-gray-300"></div>
+        <ul class="flex gap-4">
+          <li class="font-bold">Home</li>
+          <li>Shop</li>
+          <li>App Product</li>
+          <li>App Product</li>
+          <li>Contact</li>
+        </ul>
+        <div class="social-media">
+          <ul class="flex gap-4">
+            <li>
+              <a href="#"><img src="./images/fb.png" alt="" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="./images/insta.png" alt="" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="./images/twit.png" alt="" /></a>
+            </li>
+          </ul>
+        </div>
+        </div>
+      </section>
+    </footer>
+    <!-- footerend -->
+
+    <!-- main end -->
+  </body>
+</html>
